@@ -4,11 +4,30 @@
   
   
   <entry>
-    <title>hexo</title>
-    <link href="/web/cl9exw1cx0000p4undrsq222y"/>
-    <url>/web/cl9exw1cx0000p4undrsq222y</url>
+    <title>test</title>
+    <link href="/web/"/>
+    <url>/web/</url>
     
     <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>博客维护</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>hexo</title>
+    <link href="/web/"/>
+    <url>/web/</url>
+    
+    <content type="html"><![CDATA[<p>dddddd</p>]]></content>
     
     
     <categories>
