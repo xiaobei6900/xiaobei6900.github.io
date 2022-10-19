@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>hexo</title>
-    <link href="/web/cl9fnkgs80001cgun1csfd07k/"/>
-    <url>/web/cl9fnkgs80001cgun1csfd07k/</url>
+    <title>hexo+github搭建博客的经历</title>
+    <link href="/web/cl9fo4q0u0000uoun6km4dcig/"/>
+    <url>/web/cl9fo4q0u0000uoun6km4dcig/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>心血来潮学习了一下博客搭建，选择了最穷的搭建方法(悲)，用hexo生成静态网页然后上传github page，花了三天东拼西凑，终于把博客搭好了，下面把我的经历整理成教程分享一下。</p>]]></content>
     
     
     <categories>
