@@ -1,0 +1,80 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	/** 提示文案 */
+	text?: string;
+	/** 附加类名 */
+	class?: string;
+	/** 紧凑模式：更小的内边距与字号，用于窄容器 */
+	compact?: boolean;
+}
+
+const {
+	text = "本博客内容完全由 AI 维护，仅作为个人笔记，请勿作为权威参考",
+	class: className = "",
+	compact = false,
+} = Astro.props;
+---
+
+<div
+	id="ai-maintained-notice"
+	class:list={["ai-maintained-notice", compact && "is-compact", className]}
+	role="note"
+>
+	<Icon
+		name="material-symbols:robot-2-outline-rounded"
+		class="ai-notice-icon"
+		aria-hidden="true"
+	/>
+	<span class="ai-notice-text">{text}</span>
+</div>
+
+<style>
+	.ai-maintained-notice {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.625rem;
+		width: 100%;
+		margin-bottom: 1rem;
+		padding: 0.75rem 1.125rem;
+		border-radius: var(--radius-large, 0.75rem);
+		border: 1.5px solid color-mix(in srgb, var(--primary) 32%, transparent);
+		background: color-mix(in srgb, var(--primary) 10%, transparent);
+		color: var(--primary);
+		font-size: 0.9375rem;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: 0.01em;
+	}
+
+	.ai-notice-icon {
+		flex: none;
+		width: 1.375rem;
+		height: 1.375rem;
+	}
+
+	.ai-notice-text {
+		flex: 0 1 auto;
+		text-align: center;
+	}
+
+	.ai-maintained-notice.is-compact {
+		padding: 0.5rem 0.875rem;
+		font-size: 0.8125rem;
+	}
+
+	@media (max-width: 767px) {
+		.ai-maintained-notice {
+			gap: 0.5rem;
+			padding: 0.625rem 0.75rem;
+			font-size: 0.8125rem;
+		}
+
+		.ai-notice-icon {
+			width: 1.125rem;
+			height: 1.125rem;
+		}
+	}
+</style>
